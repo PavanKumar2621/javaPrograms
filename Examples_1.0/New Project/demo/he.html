@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bike Loan Application - Create Account</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		form {
+			background-color: white;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+			max-width: 400px;
+			margin: 50px auto;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 0;
+			color: #333;
+		}
+
+		input[type="text"],
+		input[type="password"] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<form action="process_create_account.php" method="POST">
+		<h1>Create a Bike Loan Application Account</h1>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" placeholder="Enter a username" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="Enter a password" required>
+		<label for="confirm_password">Confirm Password:</label>
+		<input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email" placeholder="Enter your email address" required>
+		<label for="phone_number">Phone Number:</label>
+		<input type="text" id="phone_number" name="phone_number" placeholder="Enter your phone number" required>
+		<input type="submit" value="Create Account">
+	</form>
+</body>
+</html>
